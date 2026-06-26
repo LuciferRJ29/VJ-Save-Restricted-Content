@@ -1,3 +1,13 @@
+<p align="center"> ​⚙️ ─「 𝐃𝐄𝐏𝐋𝐎𝐘 」─
+​<h3 align="center">🚀 Deploy On Heroku</h3>
+​<p align="center">
+<a href="https://dashboard.heroku.com/new?template=https://github.com/LuciferRJ29/VJ-Save-Restricted-Content">
+<img src="https://img.shields.io/badge/⚡%20Deploy%20To%20Heroku-purple?style=for-the-badge&logo=heroku" width="250">
+</a>
+</p>
+
+
+
 
 <p align="center">
   <img src="https://i.ibb.co/dJ0gpJf1/photo-2025-06-16-12-07-05-7516517596376596504.jpg" alt="VJ Save Restricted Bot Logo">
