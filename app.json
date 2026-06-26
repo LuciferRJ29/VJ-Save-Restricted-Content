@@ -1,0 +1,76 @@
+{
+  "name": "Save Restricted Content Bot",
+  "description": "Telegram Bot to save restricted content from channels and groups.",
+  "logo": "https://telegra.ph/file/5d8b3f2a5b8d8b0e9e4d5.jpg",
+  "keywords": [
+    "telegram",
+    "pyrogram",
+    "bot",
+    "save-content"
+  ],
+  "website": "https://github.com/",
+  "repository": "https://github.com/yourusername/yourrepo",
+  "success_url": "/",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Telegram Bot Token from @BotFather",
+      "required": true
+    },
+    "API_ID": {
+      "description": "Telegram API ID",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API Hash",
+      "required": true
+    },
+    "ADMINS": {
+      "description": "Telegram User ID of Bot Owner",
+      "value": "6073523936",
+      "required": true
+    },
+    "LOGIN_SYSTEM": {
+      "description": "Enable Login System (True/False)",
+      "value": "True",
+      "required": false
+    },
+    "STRING_SESSION": {
+      "description": "Telegram Account String Session (Required only if LOGIN_SYSTEM=False)",
+      "required": false
+    },
+    "CHANNEL_ID": {
+      "description": "Private Channel ID where bot uploads files (Optional)",
+      "required": false
+    },
+    "DB_URI": {
+      "description": "MongoDB Connection URI",
+      "required": true
+    },
+    "DB_NAME": {
+      "description": "MongoDB Database Name",
+      "value": "vjsavecontentbot",
+      "required": false
+    },
+    "WAITING_TIME": {
+      "description": "Delay between requests (seconds)",
+      "value": "10",
+      "required": false
+    },
+    "ERROR_MESSAGE": {
+      "description": "Send error messages to admin (True/False)",
+      "value": "True",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
